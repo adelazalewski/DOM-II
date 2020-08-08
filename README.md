@@ -27,22 +27,22 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 ### Task 2a: Create listeners for 10 types of events
 
 * [ ] Using your [index.js file](js/index.js), create [event listeners](https://developer.mozilla.org/en-US/docs/Web/Events) of at least 10 _different_ types. You must Use your creativity to make the Fun Bus site more interactive. For example you could change colors, animate objects, remove objects, etc. Here are some event types you could try to use:
-  * `mouseover` done
+  * `mouseover` done + mouseout
   * `keydown`works with any key - on the body DONE
   * `wheel` the mouse wheel DONE on img
   * `load` done on the window
-  * `focus` does not bubble compared to focusin -- PORBLEM
+  * `focus` does not bubble compared to focusin -- work with a click on a nav anchor for example--i put it on the window and it log in the console everytime you go back to the page!! DONE
   * `resize` done on the window
-  * `scroll` -- seems complicated xxx
+  * `scroll` done
   * `select` xxx
   * `dblclick` footer button DONE
   * `drag / drop` did mouseout
- DO A CLICK TOO done!
+ DO A CLICK TOO - done!
 Note: Drag and drop is a bit more advanced than the others: it's not actually a single type of event but several types that need to work together.
 
 * [ ] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
 DONE on the footer nested elem.
-* [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
+* [ ] Stop the navigation items from refreshing the page by using `preventDefault()` -- DONE
 
 ### Task 2b: Exit Ticket
 

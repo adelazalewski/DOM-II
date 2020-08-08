@@ -16,6 +16,10 @@ footerStyling.style.padding = "2rem";
 footerStyling.style.background = "deeppink";
 footerStyling.style.textAlign = "center";
 const navigation = document.querySelectorAll('.nav-link');
+navigation[2].href = "https://www.w3schools.com/cssref/css_colors.asp";
+navigation[2].addEventListener('click', (event) => {
+    event.preventDefault();
+});
 navigation.forEach((element) => {
     element.style.padding = "1.5rem";
     element.style.textDecoration = "none";
@@ -56,6 +60,13 @@ window.addEventListener('resize', (event) => {
 window.addEventListener('load', (event) => {
     console.log('page has loaded');
 });
+window.addEventListener('scroll', (event) => {
+    //alert('You-re scrolling');
+    console.log('You-re scrolling');
+});
+window.addEventListener('focus', (event) => {
+    console.log('here it goes. you-re focusing on something finally!');
+});//logs it everytime you go back to the page! what?! yeyy!!
 const createButton = document.createElement('button');
 createButton.textContent = "See More!";
 //console.log(footerStyling);
@@ -70,6 +81,12 @@ footerStyling.addEventListener('dblclick', (event) => {
     footerStyling.style.background = "#BDB76B";
     footerStyling.style.border = "1px solid #D2691E";
 });
+// footerStyling.addEventListener('focus', (event) => {
+//     body.style.background = "#1E90FF";
+// });
+// imgTags[0].addEventListener('focus', (event) => {
+//     imgTags[0].target.style.border = "1px solid red";
+// })
 imgTags[1].addEventListener('wheel', (event) => {
     event.target.src = "https://cdn3.vox-cdn.com/thumbor/bh23Zg-SBn3fvfJ2Ty6HTTPG82Y=/0x0:1386x780/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/49965571/google-maps-earth-1.0.0.jpg";
 });
